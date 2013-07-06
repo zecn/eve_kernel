@@ -64,14 +64,14 @@ UTS_TRUNCATE="cut -b -$UTS_LEN"
   echo \#define UTS_VERSION \"`echo $UTS_VERSION | $UTS_TRUNCATE`\"
 
   echo \#define LINUX_COMPILE_TIME \"`date +%T`\"
-#  echo \#define LINUX_COMPILE_BY \"`whoami`\" #orig
-  echo \#define LINUX_COMPILE_BY \"`echo zecn`\" #ratakan
+ echo \#define LINUX_COMPILE_BY \"`whoami`\" #orig
+#  echo \#define LINUX_COMPILE_BY \"`echo zecn`\" #ratakan
 #  echo \#define LINUX_COMPILE_BY \"`echo karat`\" #ratakan
 #  echo \#define LINUX_COMPILE_BY \"`echo kafir`\" #kurapsz
 #  echo \#define LINUX_COMPILE_BY \"`echo glenhart`\" #glenn
 #  echo \#define LINUX_COMPILE_BY \"`echo jadisul`\" #jadisul
-#  echo \#define LINUX_COMPILE_HOST \"`hostname | $UTS_TRUNCATE`\"
-  echo \#define LINUX_COMPILE_HOST \"`echo illegal-devshit | $UTS_TRUNCATE`\"
+  echo \#define LINUX_COMPILE_HOST \"`hostname | $UTS_TRUNCATE`\"
+#  echo \#define LINUX_COMPILE_HOST \"`echo illegal-devshit | $UTS_TRUNCATE`\"
 
   domain=`dnsdomainname 2> /dev/null`
   if [ -z "$domain" ]; then
